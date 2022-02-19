@@ -1,0 +1,19 @@
+.containerCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.card {
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    min-width: 250px;
+    min-height: 300px;
+
+}
