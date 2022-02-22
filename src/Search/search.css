@@ -1,0 +1,28 @@
+.searchContent{
+    height: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
+input{
+height: 30px;
+ border: 1px solid rgb(206, 201, 201);
+ border-radius: 3px;
+ width: 75%;
+}
+
+.btn{
+     box-sizing: border-box;
+    cursor: pointer;
+    background: rgba(31, 31, 212, 0.911);
+    border: 1px solid rgba(31, 31, 212, 0.911);
+    height: 33px;
+    width: 80px;
+    margin: 10px;
+    padding: auto;
+    border-radius:4px ;
+    box-shadow: 0px 0px 5px ;
+    color: aliceblue; 
+    }
+ 

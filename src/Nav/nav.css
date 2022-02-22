@@ -1,0 +1,30 @@
+.navegacion{
+    background: #f5f2f2b8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 5px;  
+}
+
+.container-items ul{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+   
+}
+
+.container-items ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    cursor: pointer;
+    padding: 9px;
+}
+
+
+.container-items ul li:hover{
+    color: black;
+    background: rgb(189, 184, 184);
+} 

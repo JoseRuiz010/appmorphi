@@ -1,3 +1,26 @@
-.App {
-  margin: 20px;
-}
+ .App{
+   display: flex;
+   flex-direction: column;
+    
+  }
+
+  .content{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 5px;
+    width: 100%;
+  }
+  .search{
+    margin: auto;
+    margin: 1px;
+  }
+  
+  .content-cards{
+     align-self: center;
+    margin: auto;
+    
+    width: 100%;
+  }
