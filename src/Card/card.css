@@ -21,6 +21,10 @@
      
 }
 
+.card:hover{
+    box-shadow:  0px 0px 17px -1px #076e7c;
+}
+
 .datosPersonaje{
 display: flex;
 flex-direction: column;

@@ -9,7 +9,8 @@ function App() {
 
   const URL = `https://rickandmortyapi.com/api/character/?page=1`
   const [data, setData] = useState([])
-  const [loading, setloading] = useState(true)
+  const [loading, setloading] = useState(true);
+  const [search, setsearch] = useState('')
   useEffect(() => {
     (async function () {
       setloading(true)
@@ -21,6 +22,10 @@ function App() {
     )();
   }, [])
 
+  const changeSearch=(e)=>{
+    setsearch(e.target.value)
+  }
+
   if (loading) return (<div>Cargando .....</div>)
 
 
@@ -29,10 +34,10 @@ function App() {
       <div className="navbar">
         <Nav/>
       </div>
-     <div className='search'><Search/></div>
+     <div className='search'><Search changeSearch={changeSearch}/></div>
       <div className="content">
-         {/* <div className='filter'><Filtro/></div> */}
-         <div className='content-cards'><Cards data={data}/></div>  
+         <div className='filter'><Filtro/></div>
+         <div className='content-cards'><Cards search={search} data={data}/></div>  
       </div>    
     </div>
   );
